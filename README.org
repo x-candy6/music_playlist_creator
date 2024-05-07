@@ -1,0 +1,11 @@
+#+TITLE: README
+
+
+* Overview
+This is a very hacky script I quickly wrote to retrieve my spotify playlists and convert each one into an .m3u file.
+I had a large directory filled with music but I wanted to listen to a specific playlist and did not want to manually create the playlist, especially when they had already existed on my spotify account.
+Datums like the API key can be manually input or taken from environment variables specified in the constructor.
+
+* Approach
+While this script was made to accomplish some quick conundrums, it's created with modularity in mind so it can be scaled in the future.
+Right now there's a lot of flaws that need to be addressed- particularly error-checking.
