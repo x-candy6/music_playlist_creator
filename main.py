@@ -71,7 +71,7 @@ class SpotifyConverter:
         print("Number of playlists:", len(playlists))
         for playlist in playlists:
             playlist_name = playlist['name']
-            with open(f"./exported_playlists/{playlist_name}.m3u", 'w') as playlist_file:
+            with open(f"./{playlist_name}.m3u", 'w') as playlist_file:
                 for track in playlist['tracks']:
                     file_path = f"{track['artist']}/{track['album_name']}/{track['track_name']}.mp3\n"
                     playlist_file.write(file_path)
